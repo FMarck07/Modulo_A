@@ -5,8 +5,6 @@
 // algoritmo che mi permetta di capire se un pezzo degli scacchi (re) è sotto scacco dalla regina.
 
 
-#define N 8
-
 int main(int argc, char *argv[]){
     int xq, yq, xk, yk;
     int vx, vy;
