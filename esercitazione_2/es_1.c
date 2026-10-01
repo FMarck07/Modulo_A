@@ -1,3 +1,16 @@
+/*Un bambino compra delle caramelle da dividere equamente con i suoi compagni e vuole calcolare quante caramelle spettano a ciascuno di essi, quante ne rimarranno e quanto ha speso per ogni suo compagno, conoscendo il prezzo di ogni caramella.
+
+Progettare un programma in linguaggio C che legge da tastiera:
+
+il numero di caramelle;
+il prezzo unitario delle caramelle;
+il numero di bambini;
+Il programma deve stampare a video:
+
+il numero di caramelle che spettano a ciascun bambino;
+il numero di caramelle che rimangono;
+la spesa per ciascun bambino.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
