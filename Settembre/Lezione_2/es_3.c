@@ -1,20 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char *argv[]){
-    float lato1, lato2;
-    float lato3;
+int main(int argc, char *argv[]) {
+    float cateto1, cateto2;
+    float ipotenusa_quadrato;
 
-    printf("\nInserisci il primo lato del rettangolo: ");
-    scanf("%f", &lato1);
+    printf("Primo cateto:");
+    scanf("%f", &cateto1);
 
-    printf("\nInserisci il secondo lato del rettangolo: ");
-    scanf("%f", &lato2);
+    printf("Secondo cateto:");
+    scanf("%f", &cateto2);
 
-    lato3 = sqrt(pow(lato1, 2) + pow(lato2, 2));
+    ipotenusa_quadrato = (pow(cateto1, 2) + pow(cateto2, 2));
 
-    printf("Il terzo lato del rettangolo vale: %.2f\n", lato3);
+    if (ipotenusa_quadrato == (int)ipotenusa_quadrato) {
+        printf("Ipotenusa al quadrato:%.0f\n", ipotenusa_quadrato);
+    } else {
+        printf("Ipotenusa al quadrato:%.2f\n", ipotenusa_quadrato);
+    }
 
     return 0;
 }

@@ -1,22 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char *argv[]){
-    float lato1, lato2, p;
-    float lato3;
+int main(int argc, char *argv[]) {
+    float perimetro, lato1, lato2, lato3;
 
-    printf("\nInserisci il perimetro del rettangolo: ");
-    scanf("%f", &p);
+    printf("Perimetro:");
+    scanf("%f", &perimetro);
 
-    printf("\nInserisci il primo lato del rettangolo: ");
+    printf("Primo lato:");
     scanf("%f", &lato1);
 
-    printf("\nInserisci il secondo lato del rettangolo: ");
+    printf("Secondo lato:");
     scanf("%f", &lato2);
 
-    lato3 = p - lato1 - lato2;
-
-    printf("Il terzo lato del rettangolo vale: %.2f\n", lato3);
+    lato3 = perimetro - lato1 - lato2;
+    
+    if (lato3 == (int)lato3) {
+        printf("Terzo lato:%.0f\n", lato3);
+    } else {
+        printf("Terzo lato:%.2f\n", lato3);
+    }
 
     return 0;
 }

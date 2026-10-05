@@ -1,28 +1,23 @@
-/*Un signore contatta un piastrellista per rimettere a nuovo il pavimento del bagno della sua casa. Il
-piastrellista chiede al signore la dimensione e il numero delle piastrelle che desidera acquistare.
-Chiedere all'utente:
-● Lunghezza lato piastrella (si supponga che sia quadrata)
-● Numero di piastrelle da comprare
-Calcolare quindi l'area del bagno ricoperta dalle piastrelle e mostrarla a schermo.*/
-
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
+    float lato;
     int numero;
-    float lunghezza, prodotto;
+    float area_totale;
 
-    printf("\nInserisci la Lunghezza delle piastella: ");
-    scanf("%f", &lunghezza);
+    printf("Lato piastrella:");
+    scanf("%f", &lato);
 
-    printf("\nInserisci il numero delle piastrelle: ");
+    printf("Numero piastrelle:");
     scanf("%d", &numero);
 
-    prodotto = lunghezza * lunghezza * numero;
+    area_totale = lato * lato * numero;
 
-    printf("Area vale: %.2f\n", prodotto);
+    if (area_totale == (int)area_totale) {
+        printf("Area totale:%.0f\n", area_totale);
+    } else {
+        printf("Area totale:%.2f\n", area_totale);
+    }
 
     return 0;
 }
