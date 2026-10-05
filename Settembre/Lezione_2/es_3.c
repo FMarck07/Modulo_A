@@ -1,3 +1,14 @@
+/*Scrivere un programma che, dati i due cateti di un triangolo rettangolo,
+calcoli il valore del quadrato dell’ipotenusa.
+SUGGERIMENTO: Notate che non è richiesto di calcolare la lunghezza dell’ipotenusa, 
+ma solo il suo quadrato, per cui non è necessario usare la radice quadrata.
+
+ESEMPIO DI ESECUZIONE
+
+Primo cateto:3
+Secondo cateto:4
+Ipotenusa al quadrato:25*/
+
 #include <stdio.h>
 #include <math.h>
 

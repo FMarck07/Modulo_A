@@ -1,3 +1,14 @@
+/*Dato il perimetro e due lati di un triangolo, 
+scrivere un programma che calcoli la lunghezza 
+del terzo lato e ne stampi a video il risultato.
+
+ESEMPIO DI ESECUZIONE
+
+Perimetro:12
+Primo lato:3
+Secondo lato:4
+Terzo lato:5*/
+
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
