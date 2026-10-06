@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
 
     numero = numero_caramelle/numero_bambini;
     printf("Caramelle per bambino: %d\n", numero);
-    rimanenti = numero_caramelle - (numero_bambini * numero);
+    rimanenti = numero_caramelle % numero_bambini;
     printf("Caramelle rimanenti: %d\n", rimanenti);
     spesa = numero * prezzo_caramelle;
     printf("Spesa per bambino: %.2f\n", spesa);
