@@ -25,54 +25,27 @@ int main(int argc, char *argv[]){
         scanf("%d/%d/%d", &giorno, &mese, &anno);
     }while(anno <= 0 || giorno <= 0 || mese <= 0);
 
-    if(mese == 2){
-        if((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)){
-            if(giorno == 29){
-                mese += 1;
-                giorno = 1;
-            }else giorno += 1;
-        }else{
-            if(giorno == 28){
-                mese += 1;
-                giorno = 1;
-            }else giorno += 1;
-        }
-    }else if(mese == 1 || mese == 3 || mese == 5 || mese == 7 || mese == 8 || mese == 10){
-        if(giorno < 31){
-            giorno += 1;
-        }else if(giorno == 31){
-            giorno = 1;
-            mese +=1;
-        }  
-        else if(mese < 12){
-            mese += 1;
-        }else if(mese == 12){
-            
-        }
-    }else if(mese == 12){
-        if(giorno < 31){
-            giorno += 1;
-        }else if(giorno == 31){
-            anno += 1;
-            mese = 1;
-            giorno = 1;
-        }  
-        
-    }
-    else{
-        if(giorno < 30){
-            giorno += 1;
-        }else if(giorno == 30){
-            giorno = 1;
-            mese +=1;
-        }      
-        else if(mese < 12){
-            mese += 1;
-        }else{
-            anno += 1;
-        }
+    int max_giorni;
+    if (mese == 2) {
+        int bisestile = (anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0);
+        max_giorni = bisestile ? 29 : 28;
+    } else if (mese == 4 || mese == 6 || mese == 9 || mese == 11) {
+        max_giorni = 30;
+    } else {
+        max_giorni = 31;
     }
     
+    if (giorno < max_giorni) {
+        giorno++;
+    } else {
+        giorno = 1;
+        if (mese == 12) {
+            mese = 1;
+            anno++;
+        } else {
+            mese++;
+        }
+    }   
     
     printf("SUCCESSIVA: %d/%d/%d", giorno, mese, anno);
 
