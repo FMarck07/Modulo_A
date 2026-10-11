@@ -19,34 +19,30 @@ SUCCESSIVA: 4/3/2000*/
 
 
 int main(int argc, char *argv[]){
-    int anno, giorno, mese;
+    int giorno, mese, anno;
+    int giorni_mese[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
     do{
         printf("Inserire la data [GG/MM/AAAA]: ");
         scanf("%d/%d/%d", &giorno, &mese, &anno);
-    }while(anno <= 0 || giorno <= 0 || mese <= 0);
-
-    int max_giorni;
-    if (mese == 2) {
-        int bisestile = (anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0);
-        max_giorni = bisestile ? 29 : 28;
-    } else if (mese == 4 || mese == 6 || mese == 9 || mese == 11) {
-        max_giorni = 30;
-    } else {
-        max_giorni = 31;
+    } while (giorno <= 0 || mese <= 0 || mese > 12 || anno <= 0);    
+    if(mese == 2){
+        if((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)) giorni_mese[2] = 29;
+        else giorni_mese[2] = 28;
     }
-    
-    if (giorno < max_giorni) {
+
+    if(giorno < giorni_mese[mese]){
         giorno++;
-    } else {
+    }else{
         giorno = 1;
-        if (mese == 12) {
+        if(mese == 12){
             mese = 1;
             anno++;
-        } else {
+        }else{
             mese++;
         }
-    }   
-    
+    }
+
     printf("SUCCESSIVA: %d/%d/%d", giorno, mese, anno);
 
     return 0;
