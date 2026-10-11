@@ -20,12 +20,10 @@ int main(int argc, char *argv[]){
     printf("Inserire 3 numeri: ");
     scanf("%d %d %d", &a, &b, &c);
 
-    if(a > b && a > c){
-        printf("MASSIMO: %d", a);
-    }else if(b > a && b > c){
-        printf("MASSIMO: %d", b);
-    }else{
-        printf("MASSIMO: %d", c);
-    }
+    int max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+    printf("MASSIMO: %d\n", max);
+ 
     return 0;
 }
