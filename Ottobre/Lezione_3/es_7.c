@@ -2,7 +2,8 @@
 
 void controllo_numero_compreso(int low, int high, int *numero){
     do{
-        scanf("%d", &(*numero));
+        printf("Inserisci un numero compreso tra %d e %d: ", low, high);
+        scanf("%d", numero);
     }while(*numero < 0 || *numero > 10);
 }
 
