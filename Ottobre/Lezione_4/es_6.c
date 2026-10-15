@@ -27,17 +27,14 @@ int main(int argc, char *argv[]){
     }while(n <= 0);
 
     for (int i = 0; i < n; i++) {
-        // 1. Ciclo per gli spazi: quante volte deve girare?
         for (int s = 0; s < n-i-1; s++) {
             printf(" ");
         }
 
-        // 2. Ciclo per gli asterischi: quante volte deve girare?
         for (int a = 0; a < (i*2+1); a++) {
             printf("*");
         }
 
-        // 3. Fine riga
         printf("\n");
     }
     
