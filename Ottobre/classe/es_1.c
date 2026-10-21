@@ -28,10 +28,7 @@ int main(void) {
 
     int target;
     printf("Inserisci il numero da cercare: ");
-    if (scanf("%d", &target) != 1) {
-        printf("Input non valido.\n");
-        return 1;
-    }
+    scanf("%d", &target);
 
     int index = cercaElemento(numbers, size, target);
     int max = trovaMassimo(numbers, size);
