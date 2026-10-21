@@ -30,7 +30,7 @@ int main(void) {
     if (index != -1) {
         printf("Numero %d trovato all'indice: %d\n", target, index);
     } else {
-        printf("Numero %d non trovato (codice: %d).\n", target, index);
+        printf("Numero %d non trovato.\n", target);
     }
 
     return 0;
