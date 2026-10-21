@@ -1,21 +1,29 @@
 #include <stdio.h>
 
-// Funzione che cerca un elemento nel vettore.
-// Ritorna l'indice se trovato, altrimenti -1.
 int cercaElemento(const int arr[], int size, int target) {
     for (int i = 0; i < size; i++) {
         if (arr[i] == target) {
-            return i; // Elemento trovato: restituisce l'indice
+            return i;
         }
     }
-    return -1; // Elemento non presente
+    return -1;
+}
+
+int trovaMassimo(const int arr[], int size) {
+    if (size <= 0) {
+        return -1;
+    }
+    int max = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
 }
 
 int main(void) {
-    // Vettore precedentemente popolato
-    int numbers[] = {14, 5, 29, 81, 42, 3, 90, 17};
-
-    // Calcolo del numero di elementi con sizeof
+    int numbers[] = {14, 500, 29, 81, 42, 3, 90, -70, -900};
     int size = sizeof(numbers) / sizeof(numbers[0]);
 
     int target;
@@ -26,12 +34,15 @@ int main(void) {
     }
 
     int index = cercaElemento(numbers, size, target);
+    int max = trovaMassimo(numbers, size);
 
     if (index != -1) {
         printf("Numero %d trovato all'indice: %d\n", target, index);
     } else {
         printf("Numero %d non trovato.\n", target);
     }
+
+    printf("Massimo: %d\n", max);
 
     return 0;
 }
