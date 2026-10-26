@@ -5,17 +5,17 @@
  * Valori di ritorno:
  *   1  -> Le stringhe sono identiche
  *  -1  -> s1 viene prima di s2 in ordine alfabetico
- *   0  -> s1 NON viene prima (viene dopo)
+ *   0  -> s1 non viene prima (viene dopo)
  */
-int controlla_ordine(const char s1[], const char s2[]) {
+int controlla_ordine(char s1[], char s2[]) {
     int res = strcmp(s1, s2);
 
     if (res == 0) {
-        return 1; // Uguali
+        return 1;   // Sono uguali
     } else if (res < 0) {
-        return -1; // s1 viene prima
+        return -1;  // s1 viene prima
     } else {
-        return 0; // s1 non viene prima
+        return 0;   // s1 non viene prima
     }
 }
 
