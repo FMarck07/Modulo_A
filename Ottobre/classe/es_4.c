@@ -7,10 +7,10 @@ int main(void) {
     printf("Inserisci la prima parola: ");
     scanf("%99s", str1);
 
-    int l = strlen(str1) - 1;
-    char str2[l];
+    int l = strlen(str1);
+    char str2[l + 1];
 
-    for(int i = 0; i <= l + 1; i++){
+    for(int i = 0; i <= l; i++){
         str2[i] = str1[i];
     }
     printf("parola %s", str2);
