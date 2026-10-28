@@ -10,9 +10,11 @@ int main(void) {
     int l = strlen(str1);
     char str2[l + 1];
 
-    for(int i = 0; i <= l; i++){
+    strcpy(str2, str1);
+
+    /*for(int i = 0; i <= l; i++){
         str2[i] = str1[i];
-    }
+    }*/
     printf("parola %s", str2);
     return 0;
 }
