@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void) {
+int main(int argc, char *argv[]) {
     char str1[100];
 
     printf("Inserisci la prima parola: ");
