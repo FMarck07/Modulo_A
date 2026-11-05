@@ -23,7 +23,6 @@ int main(int argc, char *argv[]){
         radice++;
     }
 
-
     printf("Radice di %d (parte intera): %d", numero, radice);
 
     return 0;

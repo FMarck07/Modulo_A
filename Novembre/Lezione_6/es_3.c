@@ -50,7 +50,7 @@ Inserisci x: 40
 #define DIM 10
 
 int cerca(int numbers[], int *index, int target){
-    int flag = 0, count = 0;
+    int count = 0;
     for(int i = 0; i < DIM; i++){
         if(numbers[i] == target){
             index[count] = i;
@@ -65,10 +65,10 @@ int main() {
     int numbers[DIM], index[DIM], target, n;
 
     for(int i = 0; i <  DIM; i++){
-        printf("Inserisci elemento: ");
+        printf("Inserisci elemento: \n");
         scanf("%d", &numbers[i]);
     }
-    printf("Inserisci x: ");
+    printf("Inserisci x: \n");
     scanf("%d", &target);
     n = cerca(numbers, index, target);
 

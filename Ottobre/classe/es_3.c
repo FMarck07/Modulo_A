@@ -19,7 +19,7 @@ int controlla_ordine(char s1[], char s2[]) {
     }
 }
 
-int main(void) {
+int main(int argc, char *argv[]) {
     char str1[100];
     char str2[100];
 

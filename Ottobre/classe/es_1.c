@@ -22,7 +22,7 @@ int trovaMassimo(const int arr[], int size) {
     return max;
 }
 
-int main(void) {
+int main(int argc, char *argv[]) {
     int numbers[] = {14, 500, 29, 81, 42, 3, 90, -70, -900};
     int size = sizeof(numbers) / sizeof(numbers[0]);
 
