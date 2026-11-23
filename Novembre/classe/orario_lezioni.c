@@ -17,11 +17,9 @@ int controllo(Lezione a, Lezione b){
 void modifica(Lezione *a, Lezione *b){
     int differenza;
     if((*a).orario_inizio > (*b).orario_inizio){
-        differenza = (*b).orario_inizio + (*b).durata - (*a).orario_inizio;
-        (*a).orario_inizio += differenza;
+        (*a).orario_inizio = (*b).orario_inizio + (*b).durata;
     }else{
-        differenza = (*a).orario_inizio + (*a).durata - (*b).orario_inizio;
-        (*b).orario_inizio += differenza;
+        (*b).orario_inizio = (*a).orario_inizio + (*a).durata;
     }
 }   
 
