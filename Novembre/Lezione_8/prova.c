@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #define MAX_RIGA 256
@@ -11,7 +11,15 @@ typedef struct {
     int anno_scadenza;
 } prodotto;
 
-int main() {
+/**
+ * @brief Leggere i dati richiesti dall'esercizio, eseguire i calcoli e visualizzare il risultato.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]) {
     prodotto archivio[Nprodotti]; 
     int nprodotti = 0;
     FILE *fp = fopen("inizializzazione_es4.txt", "r");

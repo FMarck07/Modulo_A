@@ -1,7 +1,15 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
+/**
+ * @brief Leggere i dati richiesti e disegnare la figura del rombo.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]){
     int n;
     do{

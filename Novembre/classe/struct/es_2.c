@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 
 typedef struct{
@@ -6,6 +6,13 @@ typedef struct{
     int ora;
 }Orario;
 
+/**
+ * @brief Calcolare l'orario successivo gestendo il passaggio al minuto successivo e alla nuova ora.
+ *
+ * @param attuale Struttura Orario rappresentante l'ora corrente.
+ *
+ * @return Restituisce la struttura Orario relativa al minuto successivo.
+ */
 Orario succ(Orario attuale){
     attuale.minuti++;
     if(attuale.minuti == 60){
@@ -19,7 +26,15 @@ Orario succ(Orario attuale){
     return attuale;
 }
 
-int main() {
+/**
+ * @brief Leggere i dati richiesti dall'esercizio, eseguire i calcoli e visualizzare il risultato.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]) {
     Orario attuale, successivo;
     do{
         printf("Inserisci l'orario attaule: \n");

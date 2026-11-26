@@ -1,23 +1,15 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 
-/*Scrivere un programma in linguaggio C che prenda in ingresso una sequenza di numeri interi positivi e negativi, terminata da zero. Quando l'utente inserisce lo zero il programma deve stampare a video la somma di tutti i numeri positivi.
-
-SUGGERIMENTO: Non è necessario memorizzare tutti i numeri positivi, è sufficiente memorizzare la loro somma.
-
-ESEMPIO DI ESECUZIONE
-
-Inserire numeri (0 per uscire):
-1
-4
-7
--4
-3
-0
-SOMMA = 15*/
-
-
+/**
+ * @brief Scrivere un programma in linguaggio C che prenda in ingresso una sequenza di numeri interi positivi e negativi, terminata da zero. Quando l'utente inserisce lo zero il programma deve stampare a video la somma di tutti i numeri positivi. SUGGERIMENTO: Non è necessario memorizzare tutti i numeri positivi, è sufficiente memorizzare la loro somma. ESEMPIO DI ESECUZIONE Inserire numeri (0 per uscire): 1 4 7 -4 3 0 SOMMA = 15
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]){
     int numero, somma = 0;
     printf("Inserire numeri (0 per uscire):");

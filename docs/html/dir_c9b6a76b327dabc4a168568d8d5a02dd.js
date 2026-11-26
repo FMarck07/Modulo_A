@@ -1,0 +1,6 @@
+var dir_c9b6a76b327dabc4a168568d8d5a02dd =
+[
+    [ "g", "dir_58e9f6853411a42b652320026c633f59.html", "dir_58e9f6853411a42b652320026c633f59" ],
+    [ "Lezione_2", "dir_5742d2995da67eeb790420c0d9374c8e.html", "dir_5742d2995da67eeb790420c0d9374c8e" ],
+    [ "Scacchi", "dir_1ae276836546e77ec3561122317bc582.html", "dir_1ae276836546e77ec3561122317bc582" ]
+];

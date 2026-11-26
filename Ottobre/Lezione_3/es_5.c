@@ -1,23 +1,16 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
 
-/*Si scriva un programma in linguaggio C che:
-
-prende in ingresso una data (giorno, mese, anno forniti come numeri interi)
-calcola la data successiva e la visualizza a video.
-Si ricorda che il mese di Febbraio ha 29 giorni negli anni bisestili.
-Non è necessario implementare un controllo sulla correttezza della data inserita.
-
-SUGGERIMENTO: Utilizzare la soluzione dell’Esercizio 4 per calcolare se l’anno fornito è bisestile.
-
-ESEMPIO DI ESECUZIONE
-
-Inserire la data [GG/MM/AAAA]: 3/3/2000
-SUCCESSIVA: 4/3/2000*/
-
-
+/**
+ * @brief Si scriva un programma in linguaggio C che: prende in ingresso una data (giorno, mese, anno forniti come numeri interi) calcola la data successiva e la visualizza a video. Si ricorda che il mese di Febbraio ha 29 giorni negli anni bisestili. Non è necessario implementare un controllo sulla correttezza della data inserita. SUGGERIMENTO: Utilizzare la soluzione dell’Esercizio 4 per calcolare se l’anno fornito è bisestile. ESEMPIO DI ESECUZIONE Inserire la data [GG/MM/AAAA]: 3/3/2000 SUCCESSIVA: 4/
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]){
     int giorno, mese, anno;
     int giorni_mese[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

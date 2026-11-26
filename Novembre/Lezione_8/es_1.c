@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 typedef struct {
     int hp, att, dif;
@@ -9,7 +9,15 @@ typedef struct {
     int n_pozioni;
 } Umano; 
 
-int main() {
+/**
+ * @brief Leggere i dati richiesti dall'esercizio, eseguire i calcoli e visualizzare il risultato.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]) {
     Personaggio licantropo;
     Umano umano;
     int count = 0, danno;

@@ -1,16 +1,15 @@
-/*Dato il perimetro e due lati di un triangolo, 
-scrivere un programma che calcoli la lunghezza 
-del terzo lato e ne stampi a video il risultato.
-
-ESEMPIO DI ESECUZIONE
-
-Perimetro:12
-Primo lato:3
-Secondo lato:4
-Terzo lato:5*/
+﻿
 
 #include <stdio.h>
 
+/**
+ * @brief Dato il perimetro e due lati di un triangolo, scrivere un programma che calcoli la lunghezza del terzo lato e ne stampi a video il risultato. ESEMPIO DI ESECUZIONE Perimetro:12 Primo lato:3 Secondo lato:4 Terzo lato:5
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]) {
     float perimetro, lato1, lato2, lato3;
 

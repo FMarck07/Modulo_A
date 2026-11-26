@@ -1,21 +1,18 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 
 
-/*Si scriva un programma C che legga da tastiera una stringa (di lunghezza massima 100 caratteri, incluso il terminatore), se ne calcoli la lunghezza (int) e la si stampi a video.
-Successivamente, si memorizzi in un'altra variabile la stringa invertita e poi si stampi a video il risultato come indicato nella figura riportata di seguito.
-
- 
-
-N.B = 
-
-Svolgere l'esercizio SENZA utilizzare le funzioni messe a disposizione dalla libreria "string.h".
-
-Non è richiesto nessun controllo sulla stringa in input*/
-
 #define MAX 100
 
-int main(){
+/**
+ * @brief Si scriva un programma C che legga da tastiera una stringa (di lunghezza massima 100 caratteri, incluso il terminatore), se ne calcoli la lunghezza (int) e la si stampi a video. Successivamente, si memorizzi in un'altra variabile la stringa invertita e poi si stampi a video il risultato come indicato nella figura riportata di seguito.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]){
     char string[MAX], inve[MAX];
     printf("Inserisci una stringa: ");
     scanf("%99s", string);
@@ -35,4 +32,3 @@ int main(){
     inve[j] = '\0';
     printf("INVERTITA: %s", inve);
 }
-

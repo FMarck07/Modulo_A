@@ -1,30 +1,16 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-/*Scrivere un programma C che prende in ingresso un numero intero N compreso tra 0 e 30. Il programma deve poi stampare a video:
 
-tutti i numeri pari maggiori di 0 e minori strettamente di N
-tutti i numeri dispari maggiori strettamente di N
- e minori di 30
-ESEMPIO DI ESECUZIONE
-
-Inserire un numero compreso fra 0 e 30: 18
-2
-4
-6
-8
-10
-12
-14
-16
-19
-21
-23
-25
-27
-29*/
-
+/**
+ * @brief Scrivere un programma C che prende in ingresso un numero intero N compreso tra 0 e 30. Il programma deve poi stampare a video: tutti i numeri pari maggiori di 0 e minori strettamente di N tutti i numeri dispari maggiori strettamente di N e minori di 30 ESEMPIO DI ESECUZIONE Inserire un numero compreso fra 0 e 30: 18 2 4 6 8 10 12 14 16 19 21 23 25 27 29
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]){
     int n;
     printf("Inserire un numero compreso fra 0 e 30: ");

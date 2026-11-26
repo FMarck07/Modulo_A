@@ -1,13 +1,18 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 
 
-/*Scrivere un programma in linguaggio C che legga due parole da tastiera. Le parole possono contenere al più 100 caratteri ciascuna.
-Si verifichi se la seconda parola è contenuta nella prima.*/
-
 #define MAX 101
 
-int main(){
+/**
+ * @brief Scrivere un programma in linguaggio C che legga due parole da tastiera. Le parole possono contenere al più 100 caratteri ciascuna. Si verifichi se la seconda parola è contenuta nella prima.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]){
     char parola[MAX], parola2[MAX];
 
     printf("Inserisci prima stringa: ");

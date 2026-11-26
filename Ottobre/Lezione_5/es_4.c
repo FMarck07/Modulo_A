@@ -1,22 +1,27 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <ctype.h>
 
-/*Si progetti un programma che converta lo stipendio di un dipendente di un'azienda in sterline o in yen. 
 
-Si creino le seguenti funzioni:
-
-Funzione di conversione euro/sterlina: float EuroSterlina(int stipendio) che effettua la conversione (1 euro = 0,91 sterlina)
-
-Funzione di conversione euro/yen: float EuroYen(int stipendio) che effettua la conversione (1 euro = 124,09 yen)
-
-Non è necessario eseguire un controllo sull'input.*/
-
+/**
+ * @brief Convertire uno stipendio da euro in sterline.
+ *
+ * @param stipendio Importo in euro da convertire.
+ *
+ * @return Restituisce l'importo convertito in sterline.
+ */
 float EuroSterlina(int stipendio){
     return stipendio * 0.91;
 }
 
+/**
+ * @brief Convertire uno stipendio da euro in yen.
+ *
+ * @param stipendio Importo in euro da convertire.
+ *
+ * @return Restituisce l'importo convertito in yen.
+ */
 float EuroYen(int stipendio){
     return stipendio * 124.09;
 }

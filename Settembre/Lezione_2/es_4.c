@@ -1,23 +1,15 @@
-/*Un signore contatta un piastrellista per rimettere a 
-nuovo il pavimento del bagno della sua casa. 
-Il piastrellista chiede al signore la dimensione e il numero 
-delle piastrelle che desidera acquistare.
-
-Chiedere all'utente:
-
-Lunghezza lato piastrella (si supponga che sia quadrata)
-Numero di piastrelle da comprare
-Calcolare quindi l'area del bagno ricoperta dalle piastrelle
-e mostrarla a schermo.
-
-ESEMPIO DI ESECUZIONE
-
-Lato piastrella:5
-Numero piastrelle:10
-Area totale:250*/
+﻿
 
 #include <stdio.h>
 
+/**
+ * @brief Un signore contatta un piastrellista per rimettere a nuovo il pavimento del bagno della sua casa. Il piastrellista chiede al signore la dimensione e il numero delle piastrelle che desidera acquistare. Chiedere all'utente: Lunghezza lato piastrella (si supponga che sia quadrata) Numero di piastrelle da comprare Calcolare quindi l'area del bagno ricoperta dalle piastrelle e mostrarla a schermo. ESEMPIO DI ESECUZIONE Lato piastrella:5 Numero piastrelle:10 Area totale:250
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]) {
     float lato;
     int numero;

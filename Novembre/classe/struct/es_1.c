@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 
 // Definizione della struct per la data
@@ -14,7 +14,15 @@ typedef struct {
     Data data_nascita;
 } Persona;
 
-int main(void) {
+/**
+ * @brief Leggere i dati richiesti dall'esercizio, eseguire i calcoli e visualizzare il risultato.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]) {
     // Data di oggi (es. 15 maggio 2024)
     Data oggi = {15, 5, 2024};
 

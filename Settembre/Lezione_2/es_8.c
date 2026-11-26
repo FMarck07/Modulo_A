@@ -1,24 +1,19 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-/*Un robot aspirapolvere si trova sul pavimento, grazie a dei sensori può individuare un oggetto fino ad una certa distanza. 
-Inserendo da tastiera questa distanza (intero in cm), stampare a video l'area di rilevamento oggetti dell'aspirapolvere, 
-quando questo compie un giro completo su sé stesso (approssimare π=3).
-Si supponga inoltre che il robot possa essere programmato per spostarsi per un certo numero di minuti, 
-impostati dall'utente (intero). Data la sua velocità di 30 cm/sec, stampare a video la distanza percorsa (in cm) 
-nel lasso di tempo impostato.
-
-ESEMPIO DI ESECUZIONE (prestare attenzione all'unità di misura dopo il valore dell'area e della distanza percorsa)
-
-Distanza:5
-Area:75cm2
-Tempo spostamento:5
-Distanza:9000cm*/
 
 #define VELOCITA 30
 
-int main(){
+/**
+ * @brief Un robot aspirapolvere si trova sul pavimento, grazie a dei sensori può individuare un oggetto fino ad una certa distanza. Inserendo da tastiera questa distanza (intero in cm), stampare a video l'area di rilevamento oggetti dell'aspirapolvere, quando questo compie un giro completo su sé stesso (approssimare π=3). Si supponga inoltre che il robot possa essere programmato per spostarsi per un certo numero di minuti, impostati dall'utente (intero). Data la sua velocità di 30 cm/sec, stampare a v
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]){
     float distanza, area;
     int tempo_spostamento, distanza_p;
     printf("Distanza:");

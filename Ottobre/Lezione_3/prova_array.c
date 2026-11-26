@@ -1,7 +1,15 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 #define GIORNO_MIN 1
 
+/**
+ * @brief Elaborare gli elementi di un array e visualizzare il risultato.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]) {
     int anno, giorno, mese;
     int giorni_mese[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

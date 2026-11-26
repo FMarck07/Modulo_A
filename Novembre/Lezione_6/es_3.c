@@ -1,54 +1,17 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
-/*Si legga da tastiera un array di 10 elementi di tipo int.
-Si legga da tastiera un intero x.
-Si cerchi se esiste l'elemento x nell'array: se è presente si visualizzano tutti gli indici in cui l'elemento compare, si stampi quante volte è stato trovato l'elemento, altrimenti si informi l'utente che l'elemento non è presente.
-
-ESEMPI DI ESECUZIONE:
-
-Inserisci elemento: 10
-Inserisci elemento: 1
-Inserisci elemento: 3
-Inserisci elemento: 6
-Inserisci elemento: 7
-Inserisci elemento: 7
-Inserisci elemento: 9
-Inserisci elemento: 12
-Inserisci elemento: 23
-Inserisci elemento: 7
-Inserisci x: 7
-x in posizione 4
-x in posizione 5
-x in posizione 9
-7 compare 3 volte
-Inserisci elemento: 10
-Inserisci elemento: 1
-Inserisci elemento: 3
-Inserisci elemento: 6
-Inserisci elemento: 7
-Inserisci elemento: 7
-Inserisci elemento: 9
-Inserisci elemento: 12
-Inserisci elemento: 23
-Inserisci elemento: 7
-Inserisci x: 6
-x in posizione 3
-6 compare 1 volta
-Inserisci elemento: 10
-Inserisci elemento: 1
-Inserisci elemento: 3
-Inserisci elemento: 6
-Inserisci elemento: 7
-Inserisci elemento: 7
-Inserisci elemento: 9
-Inserisci elemento: 12
-Inserisci elemento: 23
-Inserisci elemento: 7
-Inserisci x: 40
-40 non presente*/
 
 #define DIM 10
 
+/**
+ * @brief Cercare tutte le occorrenze del numero target nell'array e memorizzarne gli indici.
+ *
+ * @param numbers Array di interi in cui effettuare la ricerca.
+ * @param index Array in cui memorizzare gli indici delle occorrenze.
+ * @param target Numero intero da cercare nell'array.
+ *
+ * @return Restituisce il numero di occorrenze trovate.
+ */
 int cerca(int numbers[], int *index, int target){
     int count = 0;
     for(int i = 0; i < DIM; i++){
@@ -61,7 +24,15 @@ int cerca(int numbers[], int *index, int target){
 }
 
 
-int main() {
+/**
+ * @brief Si legga da tastiera un array di 10 elementi di tipo int. Si legga da tastiera un intero x. Si cerchi se esiste l'elemento x nell'array: se è presente si visualizzano tutti gli indici in cui l'elemento compare, si stampi quante volte è stato trovato l'elemento, altrimenti si informi l'utente che l'elemento non è presente.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]) {
     int numbers[DIM], index[DIM], target, n;
 
     for(int i = 0; i <  DIM; i++){

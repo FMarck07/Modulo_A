@@ -1,18 +1,28 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-/*Scrivere un programma C che, dato un numero intero N , calcoli e stampi il fattoriale di tutti i numeri interi minori o uguali a N
-. Si usi il tipo di ciclo ritenuto più adeguato.
 
-SUGGERIMENTO: il fattoriale di N è il risultato della moltiplicazione di tutti i numeri interi compresi fra 1 e N. Esempio: 4!=4⋅3⋅2⋅1
-*/
-
+/**
+ * @brief Calcolare il fattoriale di un numero intero positivo.
+ *
+ * @param n Numero intero positivo di cui calcolare il fattoriale.
+ *
+ * @return Restituisce il fattoriale di n.
+ */
 int fatt(int n){
     if(n <= 1) return 1;
     else return n * fatt(n - 1);
 }
 
+/**
+ * @brief for(int i = 1; i <= n; i++){ f *= i; printf("Fatt(%d) = %d\n", i, f); }
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]){
     int n, f = 1;
     printf("Inserire N: ");
@@ -23,10 +33,7 @@ int main(int argc, char *argv[]){
     }
     
     
-    /*for(int i = 1; i <= n; i++){
-        f *= i;
-        printf("Fatt(%d) = %d\n", i, f);
-    }*/
+    
     return 0;
     
 }

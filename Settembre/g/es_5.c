@@ -1,9 +1,16 @@
-/*Dati due numeri interi positivi N1 ed N2 calcolare, mediante la somma
-ripetuta, il prodotto dei due numeri e visualizzarli.*/
+﻿
 
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * @brief Dati due numeri interi positivi N1 ed N2 calcolare, mediante la somma ripetuta, il prodotto dei due numeri e visualizzarli.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]){
     int prodotto = 0;
     if(argc != 3){

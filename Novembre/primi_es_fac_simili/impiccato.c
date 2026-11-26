@@ -1,9 +1,18 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 
 
 #define DIM 100
 
+/**
+ * @brief Verificare se un carattere è presente nella parola segreta e rivelarne tutte le occorrenze.
+ *
+ * @param stringa_s Stringa mascherata da aggiornare.
+ * @param stringa Parola segreta da confrontare.
+ * @param c Carattere inserito dall'utente.
+ *
+ * @return Restituisce 1 se il carattere è presente, altrimenti 0.
+ */
 int controllo(char stringa_s[], char stringa[], char c){
     int flag = 0, i = 0;
     while(stringa[i] != '\0'){
@@ -16,7 +25,15 @@ int controllo(char stringa_s[], char stringa[], char c){
     return flag;
 }
 
-int main() {
+/**
+ * @brief Gestire una partita del gioco dell'impiccato.
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]) {
     char stringa[DIM];
     
     printf("Inserisci la parola segreta: ");

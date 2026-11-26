@@ -1,55 +1,6 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 
-
-/*Si scriva un programma C che definisca un tipo di dato Studente.
-
-Ogni studente è caratterizzato da:
-
-
-matricola (intero);
-
-
-nome (stringa contenente al più 20 caratteri compreso il terminatore);
-
-cognome (stringa contenente al più 20 caratteri compreso il terminatore).
-
-
-Il programma acquisisca da tastiera i dati di al massimo 100 studenti salvando le informazioni in un vettore di strutture.
-
-L’inserimento termina quando si inserisce una matricola uguale a 0.
-
-Chieda all'utente il nome e cognome di uno studente, lo cerchi nel vettore e ne stampi la matricola.
-
-ESEMPI DI ESECUZIONE:
-
-Inserire matricola (0 per STOP): 101
-Inserire nome: Mario
-Inserire cognome: Rossi
-Inserire matricola (0 per STOP): 102
-Inserire nome: Luca
-Inserire cognome: Bianchi
-Inserire matricola (0 per STOP): 103
-Inserire nome: Giulia
-Inserire cognome: Verdi
-Inserire matricola (0 per STOP): 0
-Inserire nome: Luca
-Inserire cognome: Bianchi
-
-MATRICOLA: 102
-NOME: Luca
-COGNOME: Bianchi
-Inserire matricola (0 per STOP): 5055
-Inserire nome: Aldo
-Inserire cognome: Baglio
-Inserire matricola (0 per STOP): 6066
-Inserire nome: Giovanni
-Inserire cognome: Storti
-Inserire matricola (0 per STOP): 0
-Inserire nome: Anna
-Inserire cognome: Neri
-
-Nessuno studente trovato.*/
 
 #define CHARS 20
 #define MAX 100
@@ -60,6 +11,12 @@ typedef struct{
     char cognome[CHARS];
 }Studente;
 
+/**
+ * @brief Acquisire da tastiera matricola, nome e cognome di uno studente.
+ *
+ *
+ * @return Restituisce una struttura Studente compilata con i dati letti.
+ */
 Studente Lettura(){
     Studente s;
     printf("Inserire matricola (0 per STOP): ");
@@ -74,6 +31,14 @@ Studente Lettura(){
     return s;
 }
 
+/**
+ * @brief Cercare uno studente nell'array in base a nome e cognome.
+ *
+ * @param array Array delle strutture Studente da esaminare.
+ * @param i Numero di studenti memorizzati.
+ *
+ * @return Restituisce l'indice dello studente trovato oppure -1 se non è presente.
+ */
 int ricerca(Studente *array, int i){
     Studente s;
 
@@ -89,7 +54,15 @@ int ricerca(Studente *array, int i){
     return -1;
 }
 
-int main(){
+/**
+ * @brief Si scriva un programma C che definisca un tipo di dato Studente. Ogni studente è caratterizzato da: matricola (intero); nome (stringa contenente al più 20 caratteri compreso il terminatore); cognome (stringa contenente al più 20 caratteri compreso il terminatore). Il programma acquisisca da tastiera i dati di al massimo 100 studenti salvando le informazioni in un vettore di strutture. L’inserimento termina quando si inserisce una matricola uguale a 0. Chieda all'utente il nome e cognome di uno s
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
+int main(int argc, char *argv[]){
     int i = 0;
     Studente array[MAX], temp;
     temp.matricola = -1;

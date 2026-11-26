@@ -1,24 +1,14 @@
-#include <stdio.h>
-
-/*Un consulente deve calcolare il numero di ore e minuti spesi lavorando per un cliente.
-Egli ha lavorato in due distinte sessioni di lavoro, per ciascuna delle quali ha annotato il numero di ore e
-il numero di minuti impiegati.
-Si scriva un programma in C che, a partire dalle ore e minuti della prima sessione di lavoro e dalle ore e 
-minuti della seconda sessione di lavoro, calcoli il numero di ore e minuti complessivi.
-
-SUGGERIMENTO: Utilizzare operazioni di divisione e modulo (resto della divisione intera), ricordando che 1h=60m
-. Prestare particolare attenzione al formato di output del risultato.
-
-ESEMPIO DI ESECUZIONE
-
-Minuti prima sessione:30
-Ore prima sessione:2
-Minuti seconda sessione:15
-Ore seconda sessione:4
-Tempo totale:6h45m
-*/
+﻿#include <stdio.h>
 
 
+/**
+ * @brief Un consulente deve calcolare il numero di ore e minuti spesi lavorando per un cliente. Egli ha lavorato in due distinte sessioni di lavoro, per ciascuna delle quali ha annotato il numero di ore e il numero di minuti impiegati. Si scriva un programma in C che, a partire dalle ore e minuti della prima sessione di lavoro e dalle ore e minuti della seconda sessione di lavoro, calcoli il numero di ore e minuti complessivi. SUGGERIMENTO: Utilizzare operazioni di divisione e modulo (resto della divisio
+ *
+ * @param argc Numero di argomenti passati attraverso la riga di comando.
+ * @param argv Array di stringhe contenente gli argomenti passati attraverso la riga di comando.
+ *
+ * @return Restituisce 0 al termine normale dell'esecuzione; restituisce un valore diverso in caso di errore.
+ */
 int main(int argc, char *argv[]) {
     int ore_primo_giorno, minuti_primo_giorno, ore_secondo_giorno, minuti_secondo_giorno;
 
